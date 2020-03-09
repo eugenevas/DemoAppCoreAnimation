@@ -18,6 +18,7 @@
 		587B309624167A040005C23B /* UITextfield+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587B309524167A040005C23B /* UITextfield+Extension.swift */; };
 		587B309A24167D8F0005C23B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587B309924167D8F0005C23B /* UIView+Extension.swift */; };
 		587B309C24167E4F0005C23B /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587B309B24167E4F0005C23B /* GradientView.swift */; };
+		587B309E24167EE00005C23B /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587B309D24167EE00005C23B /* AccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		587B309524167A040005C23B /* UITextfield+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextfield+Extension.swift"; sourceTree = "<group>"; };
 		587B309924167D8F0005C23B /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		587B309B24167E4F0005C23B /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		587B309D24167EE00005C23B /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,12 +70,13 @@
 			children = (
 				587B307D241662E10005C23B /* AppDelegate.swift */,
 				587B307F241662E10005C23B /* SceneDelegate.swift */,
-				587B3081241662E10005C23B /* ViewController.swift */,
 				587B309124166A400005C23B /* ColorConstants.swift */,
 				587B309324166D850005C23B /* UIButtons+Extension.swift */,
 				587B309524167A040005C23B /* UITextfield+Extension.swift */,
 				587B309924167D8F0005C23B /* UIView+Extension.swift */,
 				587B309B24167E4F0005C23B /* GradientView.swift */,
+				587B3081241662E10005C23B /* ViewController.swift */,
+				587B309D24167EE00005C23B /* AccountViewController.swift */,
 				587B3083241662E10005C23B /* Main.storyboard */,
 				587B3086241662E30005C23B /* Assets.xcassets */,
 				587B3088241662E30005C23B /* LaunchScreen.storyboard */,
@@ -161,6 +164,7 @@
 				587B3080241662E10005C23B /* SceneDelegate.swift in Sources */,
 				587B309C24167E4F0005C23B /* GradientView.swift in Sources */,
 				587B309224166A400005C23B /* ColorConstants.swift in Sources */,
+				587B309E24167EE00005C23B /* AccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
