@@ -20,12 +20,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         //some code
-        /*
-         
-         code1
-         code...
-         
-         */
+       
     }
 
 
