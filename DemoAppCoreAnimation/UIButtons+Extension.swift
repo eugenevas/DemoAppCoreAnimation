@@ -30,14 +30,14 @@ extension UIButton {
     }
     
     func applyShadows() {
-        self.layer.shadowColor = Colors.darkGreen.cgColor
+        self.layer.shadowColor = Colors.darkBlue.cgColor
         self.layer.shadowOffset = CGSize(width: 0, height: 5)    // смещение под углом
         self.layer.shadowOpacity = 1                             // прозрачность тени
         self.layer.shadowRadius = 10                             // рассеянность (чёткость границ)
     }
     
     func applyDesign() {
-        self.titleLabel?.font = UIFont(name: "Apple SD Gothic Neo", size: 26)
+        self.titleLabel?.font = UIFont(name: "Apple SD Gothic Neo", size: 23)
         self.layer.cornerRadius = 8
     }
 }

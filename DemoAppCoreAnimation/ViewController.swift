@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var buttonWithShadows: UIButton!
-    
+    @IBOutlet var correctPassword: UILabel!
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         submitButton.layer.cornerRadius = 8
         submitButton.layer.masksToBounds = true
         
-        // buttonWithShadows
+        // green button withShadows
         buttonWithShadows.applyShadows()
         buttonWithShadows.applyDesign()
         
@@ -48,12 +48,8 @@ class ViewController: UIViewController {
     }
     
     // MARK: -Buttons
-    // blue button
-    @objc func buttonAction() {
-        print("Button tapped")
-    }
     
-    // green button
+    // submit button
     @IBAction func submitedButton(_ sender: UIButton) {
         
         if passwordField.text == "pass"  {
@@ -62,6 +58,16 @@ class ViewController: UIViewController {
         } else {
             passwordField.shakeTextfield()
         }
+    }
+    
+    // test button
+       @objc func buttonAction() {
+           print("Button tapped")
+       }
+    
+    // button
+    @IBAction func correctPassButton(_ sender: UIButton) {
+        correctPassword.text = "pass"
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {

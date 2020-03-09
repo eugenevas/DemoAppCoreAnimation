@@ -40,33 +40,45 @@
                                     <action selector="submitedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="20I-wF-fgN"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HP6-eY-pdv">
+                                <rect key="frame" x="172" y="331" width="70" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C57-AZ-I5R">
-                                <rect key="frame" x="127" y="778" width="160" height="34"/>
+                                <rect key="frame" x="97" y="778" width="220" height="34"/>
                                 <color key="backgroundColor" red="0.3559570312" green="0.7563476562" blue="0.4404296875" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="160" id="eZO-OK-o8v"/>
+                                    <constraint firstAttribute="width" constant="220" id="a7K-5f-k0O"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Tap for a correct pass">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="correctPassButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pA2-Wm-krN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="C57-AZ-I5R" secondAttribute="bottom" constant="50" id="8oO-Ow-Ufp"/>
                             <constraint firstItem="ync-cP-uQf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="9wA-aF-BbT"/>
                             <constraint firstItem="2K3-gL-w9h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="DaP-Ad-YRg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2K3-gL-w9h" secondAttribute="trailing" constant="107" id="GPw-vg-bQj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ync-cP-uQf" secondAttribute="trailing" constant="107" id="OPP-XG-lRr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C57-AZ-I5R" secondAttribute="trailing" constant="97" id="Pa9-ze-RPW"/>
                             <constraint firstItem="ync-cP-uQf" firstAttribute="top" secondItem="2K3-gL-w9h" secondAttribute="bottom" constant="50" id="X9N-ub-6w1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C57-AZ-I5R" secondAttribute="trailing" constant="127" id="XhO-HQ-Zim"/>
                             <constraint firstItem="2K3-gL-w9h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="Yej-QP-pxB"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="C57-AZ-I5R" secondAttribute="bottom" constant="50" id="gSc-y9-yyW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="buttonWithShadows" destination="C57-AZ-I5R" id="9gU-Mm-0Eu"/>
+                        <outlet property="correctPassword" destination="HP6-eY-pdv" id="TNR-VW-oGr"/>
                         <outlet property="passwordField" destination="2K3-gL-w9h" id="KRk-aO-clF"/>
                         <outlet property="submitButton" destination="ync-cP-uQf" id="K3D-wg-y8G"/>
                         <segue destination="Kk6-hb-fbj" kind="show" identifier="showAccount" id="A2y-zX-p7c"/>
@@ -74,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-49" y="111"/>
+            <point key="canvasLocation" x="-49.275362318840585" y="110.49107142857143"/>
         </scene>
         <!--Account View Controller-->
         <scene sceneID="Vej-pt-ADn">
@@ -84,18 +96,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBX-C7-NE6">
-                                <rect key="frame" x="161" y="150" width="92" height="31.5"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBX-C7-NE6">
+                                <rect key="frame" x="117" y="150" width="180" height="29"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="tBX-C7-NE6" firstAttribute="leading" secondItem="xAT-Di-XkS" secondAttribute="leading" constant="161" id="A1L-bM-rhW"/>
-                            <constraint firstItem="tBX-C7-NE6" firstAttribute="top" secondItem="xAT-Di-XkS" secondAttribute="top" constant="150" id="D2C-jQ-4pA"/>
-                            <constraint firstItem="xAT-Di-XkS" firstAttribute="trailing" secondItem="tBX-C7-NE6" secondAttribute="trailing" constant="161" id="X9m-l7-AG1"/>
+                            <constraint firstItem="tBX-C7-NE6" firstAttribute="top" secondItem="xAT-Di-XkS" secondAttribute="top" constant="150" id="A5t-L8-RWJ"/>
+                            <constraint firstItem="tBX-C7-NE6" firstAttribute="leading" secondItem="xAT-Di-XkS" secondAttribute="leading" constant="117" id="Zvf-1U-hAN"/>
+                            <constraint firstItem="xAT-Di-XkS" firstAttribute="trailing" secondItem="tBX-C7-NE6" secondAttribute="trailing" constant="117" id="sMB-xI-QLj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xAT-Di-XkS"/>
                         <userDefinedRuntimeAttributes>
@@ -108,6 +120,9 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" id="kh9-K8-XSW"/>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="tBX-C7-NE6" id="uAe-1C-ARg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AuE-Bv-S2b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
