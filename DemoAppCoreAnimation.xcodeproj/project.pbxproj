@@ -14,6 +14,7 @@
 		587B3087241662E30005C23B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 587B3086241662E30005C23B /* Assets.xcassets */; };
 		587B308A241662E30005C23B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 587B3088241662E30005C23B /* LaunchScreen.storyboard */; };
 		587B309224166A400005C23B /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587B309124166A400005C23B /* ColorConstants.swift */; };
+		587B309424166D850005C23B /* UIButtons+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587B309324166D850005C23B /* UIButtons+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		587B3089241662E30005C23B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		587B308B241662E30005C23B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		587B309124166A400005C23B /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
+		587B309324166D850005C23B /* UIButtons+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButtons+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				587B307F241662E10005C23B /* SceneDelegate.swift */,
 				587B3081241662E10005C23B /* ViewController.swift */,
 				587B309124166A400005C23B /* ColorConstants.swift */,
+				587B309324166D850005C23B /* UIButtons+Extension.swift */,
 				587B3083241662E10005C23B /* Main.storyboard */,
 				587B3086241662E30005C23B /* Assets.xcassets */,
 				587B3088241662E30005C23B /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				587B3082241662E10005C23B /* ViewController.swift in Sources */,
 				587B307E241662E10005C23B /* AppDelegate.swift in Sources */,
+				587B309424166D850005C23B /* UIButtons+Extension.swift in Sources */,
 				587B3080241662E10005C23B /* SceneDelegate.swift in Sources */,
 				587B309224166A400005C23B /* ColorConstants.swift in Sources */,
 			);
