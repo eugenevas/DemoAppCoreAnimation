@@ -16,6 +16,7 @@
 		587B309224166A400005C23B /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587B309124166A400005C23B /* ColorConstants.swift */; };
 		587B309424166D850005C23B /* UIButtons+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587B309324166D850005C23B /* UIButtons+Extension.swift */; };
 		587B309624167A040005C23B /* UITextfield+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587B309524167A040005C23B /* UITextfield+Extension.swift */; };
+		587B309A24167D8F0005C23B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587B309924167D8F0005C23B /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		587B309124166A400005C23B /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
 		587B309324166D850005C23B /* UIButtons+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButtons+Extension.swift"; sourceTree = "<group>"; };
 		587B309524167A040005C23B /* UITextfield+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextfield+Extension.swift"; sourceTree = "<group>"; };
+		587B309924167D8F0005C23B /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				587B309124166A400005C23B /* ColorConstants.swift */,
 				587B309324166D850005C23B /* UIButtons+Extension.swift */,
 				587B309524167A040005C23B /* UITextfield+Extension.swift */,
+				587B309924167D8F0005C23B /* UIView+Extension.swift */,
 				587B3083241662E10005C23B /* Main.storyboard */,
 				587B3086241662E30005C23B /* Assets.xcassets */,
 				587B3088241662E30005C23B /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				587B3082241662E10005C23B /* ViewController.swift in Sources */,
+				587B309A24167D8F0005C23B /* UIView+Extension.swift in Sources */,
 				587B307E241662E10005C23B /* AppDelegate.swift in Sources */,
 				587B309424166D850005C23B /* UIButtons+Extension.swift in Sources */,
 				587B309624167A040005C23B /* UITextfield+Extension.swift in Sources */,
